@@ -5,6 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { businessInfo, targetKeywords } from "@/data/site";
 import "./globals.css";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   metadataBase: new URL(businessInfo.baseUrl),
   title: {
