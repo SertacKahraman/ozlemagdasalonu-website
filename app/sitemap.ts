@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { blogPosts, businessInfo, services } from "@/data/site";
 
+export const dynamic = "force-static";
+
 const staticLastModified = new Date("2026-05-29");
 const serviceLastModified = new Date("2026-05-29");
 
