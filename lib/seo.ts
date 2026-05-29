@@ -25,14 +25,6 @@ function toAbsoluteUrl(url: string): string {
   return `${businessInfo.baseUrl}${url}`;
 }
 
-function toSameAsUrl(url: string): string {
-  if (url.startsWith("http")) {
-    return url;
-  }
-
-  return `https://www.instagram.com/${url.replace("@", "")}`;
-}
-
 export function generatePageMetadata(seo: SEOFields): Metadata {
   return {
     title: seo.metaTitle,
@@ -123,9 +115,6 @@ export function generateLocalBusinessSchema() {
         },
       })),
     },
-    ...(businessInfo.instagram
-      ? { sameAs: [toSameAsUrl(businessInfo.instagram)] }
-      : {}),
   };
 }
 

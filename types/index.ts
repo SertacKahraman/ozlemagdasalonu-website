@@ -84,7 +84,6 @@ export type BusinessInfo = {
   city: string;
   district: string;
   country: string;
-  instagram: string;
   workingHours: string;
   mapEmbedUrl: string;
   logoUrl: string;

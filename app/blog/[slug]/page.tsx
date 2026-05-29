@@ -87,24 +87,6 @@ function CalendarIcon() {
   );
 }
 
-function InstagramIcon() {
-  return (
-    <svg aria-hidden="true" className="h-4 w-4" viewBox="0 0 24 24" fill="none">
-      <rect
-        x="4"
-        y="4"
-        width="16"
-        height="16"
-        rx="4"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
-      <circle cx="12" cy="12" r="3.2" stroke="currentColor" strokeWidth="1.8" />
-      <circle cx="16.8" cy="7.2" r="1" fill="currentColor" />
-    </svg>
-  );
-}
-
 function XIcon() {
   return (
     <svg aria-hidden="true" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -216,11 +198,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   const encodedUrl = encodeURIComponent(post.seo.canonicalUrl);
   const encodedTitle = encodeURIComponent(post.title);
   const shareLinks = [
-    {
-      label: "Instagram profilini aç",
-      href: businessInfo.instagram,
-      icon: <InstagramIcon />,
-    },
+
     {
       label: "X'te paylaş",
       href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,

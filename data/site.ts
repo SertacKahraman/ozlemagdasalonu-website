@@ -1,4 +1,4 @@
-﻿import type {
+import type {
   BlogPost,
   BusinessInfo,
   FAQ,
@@ -45,7 +45,6 @@ export const businessInfo: BusinessInfo = {
   city: "Ordu",
   district: "Altınordu",
   country: "TR",
-  instagram: "https://www.instagram.com/ozlemagdasalonu/",
   workingHours: "Pazartesi - Cuma: 09:30 - 18:00; Cumartesi: 10:30 - 17:00; Pazar: Kapalı",
   mapEmbedUrl: "https://www.google.com/maps?q=%C3%96zlem%20A%C4%9Fda%20ve%20Bak%C4%B1m%20Salonu%2C%20Alt%C4%B1nordu%2C%20Ordu&z=16&output=embed",
   logoUrl: `${baseUrl}/assets/brand/ozlem-logo.png`,
