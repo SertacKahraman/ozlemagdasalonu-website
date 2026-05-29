@@ -1,15 +1,10 @@
-﻿import { headers } from "next/headers";
-
 type JsonLdProps = {
   data: Record<string, unknown>;
 };
 
-export default async function JsonLd({ data }: JsonLdProps) {
-  const nonce = (await headers()).get("x-nonce") ?? undefined;
-
+export default function JsonLd({ data }: JsonLdProps) {
   return (
     <script
-      nonce={nonce}
       suppressHydrationWarning
       type="application/ld+json"
       dangerouslySetInnerHTML={{
