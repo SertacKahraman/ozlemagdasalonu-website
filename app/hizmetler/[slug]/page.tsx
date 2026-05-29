@@ -40,7 +40,9 @@ type ServiceDetailContent = {
   relatedBlogSlugs: string[];
 };
 
-export const dynamic = "force-dynamic";
+export function generateStaticParams() {
+  return services.map((service) => ({ slug: service.slug }));
+}
 
 const serviceDetails: Record<string, ServiceDetailContent> = {
   agda: {
