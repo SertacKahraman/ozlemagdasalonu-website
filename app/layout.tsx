@@ -1,11 +1,9 @@
-﻿import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import { businessInfo, targetKeywords } from "@/data/site";
 import "./globals.css";
-
-export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   metadataBase: new URL(businessInfo.baseUrl),
